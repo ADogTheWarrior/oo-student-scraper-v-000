@@ -18,8 +18,8 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-      new_student = Student.new({})
-      new_student.add_student_attributes(student)
+      new_student = Student.new(student)
+      # new_student.add_student_attributes(student)
       # student.each {|key, value| new_student.send(("#{key}="), value)}
     end
   end
